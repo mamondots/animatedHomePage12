@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/910ce80589.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>animated websites</title>
+</head>
+<body>
+    <div class="container">
+       <header>
+          <div class="logo">
+            <a href="">mamondots</a>
+          </div>
+          <div class="menu">
+             <ul>
+               <li><a href="">about</a></li>
+               <li><a href="">solutions <i class="fa-solid fa-angle-down"></i></a>
+                  <div class="hiddenMenu">
+                      <ul>
+                         <li><i class="fa-regular fa-message"></i><a href="">email marketing</a></li>
+                         <li><i class="fa-solid fa-book"></i><a href="">email API</a></li>
+                         <li><i class="fa-solid fa-phone-volume"></i><a href="">sms marketing</a></li>
+                         <li><i class="fa-solid fa-globe"></i><a href="">marketing automation</a></li>
+                      </ul>
+                  </div>
+               </li>
+               <li><a href="">pricing plan</a></li>
+               <li><a href="">blog</a></li>
+             </ul>
+          </div>
+          <div class="btns">
+             <button class="btn01">log in</button>
+             <button class="btn02">sing up</button>
+          </div>
+       </header>
+       <div class="content">
+          <div class="content-info">
+             <h1>Scale your market<br> with <span>Automated</span> <br>E-mail and SMS</h1>
+             <p>
+               Bring your audience data, marketing channels, and insights together<br> 
+               so you con reach your goals faster -all from a single platform.
+             </p>
+             <form>
+               <input type="email" class="emailBox" placeholder="Enter your e-mail address">
+               <a href="" class="submite">start free trail</a>
+             </form>
+             <div class="code">
+                <li>Start for free</li>
+                <li>No credit card required</li>
+                <li>Cancel anytime</li>
+             </div>
+          </div>
+          <div class="img-content">
+             <div class="main-img firstImg">
+                <img src="img/email-marketing-woman.webp">
+             </div>
+             <div class="main-img secondImg">
+               <img src="img/Mails-Hero-Image-2.webp">
+            </div>
+            <div class="box">
+               <i class="fa-brands fa-gitlab"></i>
+               <div class="box-info">
+                   <span>10.000</span>
+                   <p>Emails Sent</p>
+               </div>
+            </div>
+          </div>
+       </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+        let animation = anime({
+            targets:'header',
+            translateY:[-80, 0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+        });
+        anime({
+            targets:'.content-info h1',
+            translateX:[50, 0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+            delay:500,
+        });
+        anime({
+            targets:'.content-info p',
+            translateX:[-50, 0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+            delay:700,
+        });
+
+        anime({
+            targets:'.content-info form',
+            translateY:[50, 0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+            delay:800,
+        });
+
+        anime({
+            targets:'.content-info .code',
+            translateX:[50, 0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+            delay:900,
+        });
+
+        anime({
+            targets:'.img-content .firstImg',
+            translateX:[120, 0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+            delay:1000,
+        });
+
+        anime({
+            targets:'.img-content .secondImg',
+            translateY:[-80, 0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+            delay:1000,
+        });
+
+        anime({
+            targets:'.img-content .box',
+            translateY:[80, 0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+            delay:1000,
+        });
+
+    </script>
+</body>
+</html>
